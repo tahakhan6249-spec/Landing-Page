@@ -1,0 +1,461 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b1020;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #101936;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #00e5ff;
+}
+
+header h1 {
+    margin: 0;
+    color: #00e5ff;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.tagline {
+    color: #dddddd;
+    font-size: 17px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.navigation a {
+    display: block;
+    padding: 9px 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #26345f;
+    border: 1px solid #00e5ff;
+    border-radius: 6px;
+}
+
+.navigation a:hover {
+    background-color: #00e5ff;
+    color: #07101c;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 55px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #00e5ff;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #ffd166;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home-section {
+    background-color: #384e90;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto 35px;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #00e5ff;
+    color: #07101c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid #00e5ff;
+}
+
+.main-button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* =========================
+   IMAGE GALLERY
+========================= */
+
+.gallery {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+}
+
+.gallery figure {
+    float: left;
+    width: 23%;
+    margin: 1%;
+    padding: 8px;
+    background-color: #111a38;
+    border: 2px solid #00e5ff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gallery figcaption {
+    padding: 8px 3px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    background-color: #101936;
+}
+
+.about-section p {
+    max-width: 900px;
+    margin: 12px auto;
+}
+
+.feature-list {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px 45px;
+    background-color: #182449;
+    border: 1px solid #00e5ff;
+    border-radius: 8px;
+}
+
+.feature-list li {
+    margin: 8px 0;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-section {
+    background-color: #17213f;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.service-card {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    padding: 25px;
+    min-height: 270px;
+    background-color: #26345f;
+    border: 2px solid #00e5ff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.service-card h3 {
+    font-size: 22px;
+}
+
+.service-card ul {
+    padding-left: 20px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features-section {
+    background-color: #252c68;
+}
+
+.feature-box {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    padding: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid #00e5ff;
+    border-radius: 10px;
+}
+
+.feature-box h3 {
+    font-size: 22px;
+}
+
+
+/* =========================
+   PRICING TABLE
+========================= */
+
+.pricing-section {
+    background-color: #101936;
+}
+
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #182449;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid #00e5ff;
+    text-align: center;
+}
+
+th {
+    background-color: #26345f;
+    color: #00e5ff;
+}
+
+tbody tr:hover {
+    background-color: #293761;
+}
+
+tfoot td {
+    color: #cccccc;
+    font-style: italic;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background-color: #17213f;
+}
+
+form {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+fieldset {
+    border: 2px solid #00e5ff;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #101936;
+}
+
+legend {
+    padding: 0 10px;
+    color: #00e5ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: white;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #00e5ff;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #00e5ff;
+    color: #07101c;
+    border: 2px solid #00e5ff;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #101936;
+    border-left: 5px solid #00e5ff;
+}
+
+.contact-details a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #080c19;
+    border-top: 2px solid #00e5ff;
+}
+
+footer a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 800px) {
+
+    .gallery figure {
+        width: 48%;
+    }
+
+    .service-card,
+    .feature-box {
+        width: 48%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .gallery figure,
+    .service-card,
+    .feature-box {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+}
